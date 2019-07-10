@@ -1,0 +1,46 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-medium;
+    width: 25%;
+    height: 100vh;
+    border-right: 0.1rem solid $background-dark;
+    font-size: 0.35em;
+    font-weight: 400;
+
+    @media only screen and (max-width: 400px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+        padding-top: 1rem;
+    }
+
+    &__links {
+        padding: 0.8rem 1.5em;
+        @media only screen and (max-width: 400px) {
+            padding: 0.3rem;
+        }
+
+
+        &:hover {
+            background-color: $background-dark;
+            border-radius: 0.3rem;
+            font-weight: 700;
+        }
+    }
+
+    &__items-1 {
+        padding: 0.5rem;
+        list-style: none;
+        margin: 0.5rem;
+        border-bottom: 0.1rem solid $background-dark;
+    }
+
+    &__items-2 {
+        padding: 0.5rem;
+        list-style: none;
+        margin: 0.5rem;
+
+    }
+}
